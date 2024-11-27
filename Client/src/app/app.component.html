@@ -1,0 +1,5 @@
+<form class="imageForm" (submit)="onSubmit()">
+    <label class="imageForm_label" for="image">Choose a picture:</label>
+    <input class="imageForm_input" id="image" type="file" (change)="onFileSelected($event)">
+    <button class="imageForm_submit" type="submit">Upload</button>
+  </form>

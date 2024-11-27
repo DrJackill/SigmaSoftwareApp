@@ -1,0 +1,14 @@
+.imageForm{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    flex-direction: column;
+    &_label{
+        padding-bottom: 10px;
+        font-size: 32px;
+    }
+    &_submit{
+        margin-top: 10px;
+    }
+}
