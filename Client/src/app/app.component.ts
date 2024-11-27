@@ -22,7 +22,7 @@ export class AppComponent {
 
   uploadImage(): void {
     const formData = new FormData();
-    formData.append('image', this.selectedFile, this.selectedFile.name);
+    formData.append('file', this.selectedFile, this.selectedFile.name);
     this.http.post(`${this.baseUrl}/form`, formData).subscribe();
   }
   

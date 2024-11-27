@@ -8,15 +8,15 @@ namespace Server.Controllers
     public class FormController : ControllerBase
     {
         [HttpPost]
-        public async Task<IActionResult> Post([FromForm] IFormFile image)
+        public async Task<IActionResult> Post([FromForm] IFormFile file)
         {
             string path = Path.GetTempPath();
             Console.WriteLine("TEST");
             using (var ms = new MemoryStream())
             {
-                image.CopyTo(ms);
+                file.CopyTo(ms);
                 var fileBytes = ms.ToArray();
-                await System.IO.File.WriteAllBytesAsync($"{path}\\{image.FileName}", fileBytes);
+                await System.IO.File.WriteAllBytesAsync($"{path}\\{file.FileName}", fileBytes);
             }
             return Ok();
         }
