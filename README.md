@@ -10,7 +10,7 @@ Ensure you have the following installed:
 1. **Clone the Repository**  
    ```bash  
    git clone <repository-url>  
-   cd wallet-api  
+   cd SigmaSoftwareApp
    ```
 2. **Install Dependencies**
    For server:
